@@ -1,0 +1,15 @@
+<div class="form-group" style="display: none;">
+    <label for="input-<%=i%>-prop-name" class="col-lg-2">
+        <button type="button" class="btn btn-default dropdown-toggle property-type" data-toggle="dropdown">String <span class="caret"></span></button>
+        <ul class="dropdown-menu property-type" role="menu">
+            <% _.each(Types, function(t){%>
+            <li><a href="javascript:;"><%=t%></a></li>
+            <% }) %>
+        </ul></label>
+    <div class="col-lg-5">
+        <input type="text" class="form-control prop-name" id="input-<%=i%>-prop-name" placeholder="Property Name">
+    </div>
+    <div class="col-lg-5">
+        <input type="text" class="form-control prop-value" id="input-<%=i%>-prop-value" placeholder="Property Value">
+    </div>
+</div>

@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en-US">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+    <link type="text/css" href="Content/Css/bootstrap.css" rel="stylesheet">
+    <link type="text/css" href="Content/Css/make-json.css" rel="stylesheet">
+</head>
+
+    <div class="navbar navbar-default navbar-static-top" role="navigation">
+        <div class="container" >
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex8-collapse">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="/">Make JSON</a>
+            </div>
+
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse navbar-ex8-collapse">
+                <ul class="nav navbar-nav">
+                    <li ><a href="/">Home</a></li>
+                    <li class="active"><a href="/wizard">Wizard</a></li>
+                    <li class="dropdown disabled">
+                        <a href="#" class="dropdown-toggle disabled" data-toggle="dropdown">Languages <b class="caret"></b></a>
+                        <ul class="dropdown-menu">
+                            <li class="disabled"><a href="#">C#</a></li>
+                            <li class="disabled"><a href="#">C++</a></li>
+                            <li class="disabled"><a href="#">Java</a></li>
+                            <li class="disabled"><a href="#">PHP</a></li>
+                            <li class="disabled"><a href="#">Ruby</a></li>
+                        </ul>
+                    </li>
+                    <li class="disabled"><a href="#">Formatter</a></li>
+                    <li class="disabled"><a href="#">Validator</a></li>
+                </ul>
+            </div><!-- /.navbar-collapse -->
+        </div>
+    </div>
+
+    <div class="container main">
+        <div class="panel panel-primary">
+            <div class="panel-heading"><h2>The Wizard</h2></div>
+            <div class="panel-body">
+                <form class="form-horizontal" role="form">
+                    <div class="progress">
+                        <div class="progress-bar progress-bar-success" role="progressbar"  style="width: 0%"></div>
+                    </div>
+                    <p id="message-intro" class="lead">Let's get started shall we? Just answer the questions as best describe your desired JSON object.</p>
+                    <div class="question"></div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+
+<div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+    <div class="container">
+        <p class="credit text-center">Copyright © <script language="JavaScript"> <!--
+        document.write('<a href="&#109;&#97;&#105;&#108;&#116;&#111;&#58;&#109;&#97;&#107;&#101;&#106;&#115;&#111;&#110;&#64;&#98;&#111;&#101;&#108;&#101;&#110;&#46;&#99;&#97;">&#74;&#97;&#109;&#101;&#115;&#32;&#66;&#111;&#101;&#108;&#101;&#110;</a>');
+        // --> </script> 2013</p>
+    </div>
+
+</div>
+</body>
+<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/underscore.js/1.5.1/underscore-min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/backbone.js/1.0.0/backbone-min.js"></script>
+<script type="text/javascript" src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.1.0/moment.min.js"></script>
+<script type="text/javascript" src="/Scripts/Library/Bootstrap/bootstrap.min.js"></script>
+<script type="text/javascript" src="/Scripts/make-json-wizard.js"></script>
+<script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+            m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-38304594-2', 'makejson.com');
+    ga('send', 'pageview');
+
+</script>
+</html>

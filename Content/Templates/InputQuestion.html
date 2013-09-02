@@ -1,0 +1,19 @@
+<div class="panel panel-default">
+    <div class="panel-heading"><h4><strong><%=Question.Question%></strong></h4></div>
+    <div class="panel-body">
+        <% _.each(Question.Answers, function(a,i){ %>
+        <div class="form-group">
+            <label for="input-<%=i%>" class="col-lg-2 control-label"></label>
+            <div class="col-lg-10">
+                <input type="text" class="form-control" id="input-<%=i%>" placeholder="<%=a%>">
+            </div>
+        </div>
+        <% }) %>
+        <div class="form-group">
+            <div class="col-lg-offset-2 col-lg-10">
+                <button type="button" class="btn btn-primary btn-lg next">Continue</button>
+
+            </div>
+        </div>
+    </div>
+</div>

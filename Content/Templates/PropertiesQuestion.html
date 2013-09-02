@@ -1,0 +1,27 @@
+<div class="panel panel-default" id="prop-group-<%=Index%>">
+    <div class="panel-heading"><h4><strong><%=Question.Question%></strong></h4></div>
+    <div class="panel-body">
+        <% for( var i = 0; i < 2; i++){ %>
+        <div class="form-group">
+            <label for="input-<%=i%>-prop-name" class="col-lg-2">
+                <button type="button" class="btn btn-default dropdown-toggle property-type" data-toggle="dropdown">String <span class="caret"></span></button>
+                <ul class="dropdown-menu property-type" role="menu">
+                    <% _.each(Question.Answers, function(t){%>
+                    <li><a href="javascript:"><%=t%></a></li>
+                    <% }) %>
+                </ul></label>
+            <div class="col-lg-5">
+                    <input type="text" class="form-control prop-name" id="input-<%=i%>-prop-name" placeholder="Property Name">
+            </div>
+            <div class="col-lg-5">
+                    <input type="text" class="form-control prop-value" id="input-<%=i%>-prop-value" placeholder="Property Value">
+            </div>
+        </div>
+        <% } %>
+        <div id="properties-submit" class="form-group">
+            <div class="col-lg-offset-2 col-lg-10">
+                <button type="button" class="btn btn-primary btn-lg next">Continue</button>
+            </div>
+        </div>
+    </div>
+</div>
