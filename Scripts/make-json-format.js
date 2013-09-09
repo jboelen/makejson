@@ -8,17 +8,20 @@
         initialize: function(){
             //_.bindAll(this, 'generate');
             this.setElement('#formatter');
-            $("textarea", this.$el).autosize();
             this.settings = {
                 lines:'multi',
                 spacing: 'space'
             };
+
+            $("textarea", this.$el).autosize();
+            $("textarea", this.$el).focus();
         },
         onFormat: function(){
             try{
                 var object = JSON.parse($('textarea', this.$el).val());
                 var result = (this.settings.lines === "single")? JSON.stringify(object) : JSON.stringify(object, null, this.settings.spacing === "space" ? parseInt($('#spacing-space-count', this.$el).val()) : '\t');
                 $('textarea', this.$el).val(result).trigger('autosize.resize');;
+                this.onAlertClose();
             }catch(ex){
                 $(".alert", this.$el).slideDown();
             }

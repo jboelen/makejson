@@ -1,3 +1,8 @@
+AddType application/font-ttf .ttf
+AddType application/font-eot .eot
+AddType application/font-otf .otf
+AddType application/font-woff .woff
+
 RewriteEngine On
 RewriteBase /
 
